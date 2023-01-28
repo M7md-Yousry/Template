@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+  background-color: #4d636f;
+}
+ul.first-menu {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+a.first-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+}
+a.first-link:hover {
+  color: #000;
+  background-color: #eee;
+}
+.first-item:nth-child(1) {
+  background-color: #3a4b53;
+}
+.first-item:nth-child(1) :hover {
+  background-color: #ccc;
+}
+a.first-link i {
+  margin-left: 5px;
+}
+li.first-item:last-child {
+  margin-left: auto;
+  padding-left: 20px;
+}
+li.first-item:nth-child(5):hover ul.second-menu {
+  display: block;
+  z-index: 1;
+}
+li.first-item:last-child:hover {
+  background-color: #fff;
+}
+/* Second menu */
+ul.second-menu {
+  list-style-type: none;
+  position: absolute;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  padding: 0px;
+  display: none;
+}
+a.second-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 8px 16px;
+  display: block;
+  cursor: pointer;
+}
+a.second-link:hover {
+  background-color: #eee;
+}
+.image {
+  width: 22px;
+  margin-right: 15px;
+  margin-top: 12px;
+}
+.first-menu .last-item {
+  display: none;
+  color: white;
+}
+.first-link span {
+  float: right !important;
+  font: 1px;
+  border-radius: 50%;
+  padding: 0px 8px;
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  li.first-item:not(.first-item:first-child) {
+    display: none;
+  }
+  .first-menu .last-item {
+    color: white;
+    display: inline-block !important;
+    margin-left: auto !important;
+    padding: 16px;
+  }
+  .first-menu .last-item:hover {
+    color: #000;
+    background-color: #fff;
+    display: inline-block !important;
+    margin-left: auto !important;
+    padding: 16px;
+  }
+  .las-item {
+    margin-left: auto;
+  }
+  .col-3{
+  display: block !important;
+  width: 100%;
+  margin: auto !important;
+  padding: auto !important;
+  }
+  .col-6{
+  display: block !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: auto !important;
+  }
+  .imgs{
+  display: flex;
+  flex-direction: column !important;
+  width: 200% !important;
+  }
+  .imgs img{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 10px;
+  }
+  .col-2{
+  display: block !important;
+  width: 100% !important;
+  margin: auto !important;
+  padding: auto !important;
+  }
+  .col-2 .first-card button{
+  width: 100%;
+  }
+  .col-2 .second-card .buttons{
+  display: flex;
+  flex-direction: column !important;
+  width: 200% !important;
+  }
+  .col-2 .second-card .buttons button{
+  margin: 10px 0px;
+  }
+  .ADS{
+  padding: 0px !important;
+  margin: 30px !important;
+  }
+  .fa-bug{
+  padding: 0px !important;
+  margin: 50px !important;
+  }
+  .NOT-Selected{
+  display: none;
+  }
+}
+.left-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: #fff;
+  margin-bottom: 25px;
+}
+.left-section {
+  margin-left: 5%;
+}
+.left-section img {
+  margin: auto;
+  width: 40%;
+  margin: 10px 30%;
+}
+.left-section h4 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.list-group-flush {
+  background-color: #7d97a5;
+  color: #fff;
+}
+.list-group-flush i {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.list-group-flush p {
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.list-group-flush li:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.inter {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.div-span {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.div-span span {
+  width: fit-content;
+  font-size: 12px;
+  padding: 0px 9px;
+  line-height: 1.5px;
+}
+.div-span .one {
+  background-color: #303e45;
+  color: white;
+}
+.div-span .two {
+  background-color: #3a4b53;
+  color: white;
+}
+.div-span .three {
+  background-color: #435761;
+  color: white;
+}
+.div-span .four {
+  background-color: #4d636f;
+  color: white;
+}
+.div-span .five {
+  background-color: #57707d;
+  color: white;
+}
+.div-span .six {
+  background-color: #607d8b;
+  color: white;
+}
+.div-span .seven {
+  background-color: #7d97a5;
+  color: white;
+}
+.div-span .eight {
+  background-color: #9eb1bb;
+  color: black;
+}
+.div-span .nine {
+  background-color: #becbd2;
+  color: black;
+}
+.div-span .ten {
+  background-color: #dfe5e8;
+  color: black;
+}
+.div-span .eleven {
+  background-color: #fff;
+  color: black;
+}
+.left-section .header button {
+  padding: 8px 16px;
+  margin-left: auto;
+  border: none;
+  color: black;
+  background-color: #becbd2;
+}
+.left-section .header button:hover {
+  padding: 8px 16px;
+  margin-left: auto;
+  border: none;
+  color: black;
+  background-color: #ccc;
+}
+.final-card {
+  background-color: #dfe5e8;
+}
+.final-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-title {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.left-section .card-body {
+  margin-left: 15px !important;
+}
+.card-text {
+  font-size: 16px !important;
+}
+.center-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: #fff;
+  margin-bottom: 15px;
+}
+.col-6 .card input {
+  width: 100%;
+  height: 35px;
+  margin: 15px 0;
+  padding: 8px 16px;
+}
+.col-6 .first-card .card-body {
+  margin: 0 2px !important;
+  padding: 3 2px !important;
+}
+.col-6 button {
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #607d8b;
+  color: white;
+  border: none;
+}
+.col-6 button:hover {
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+}
+.col-6 button p {
+  margin-left: 7px !important;
+}
+.col-6 .second-card .card-header img {
+  width: 10%;
+}
+.col-6 .second-card button {
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #4d636f;
+  color: white;
+  border: none;
+}
+.col-6 .second-card button:hover {
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+}
+.col-6 .card-header p {
+  margin-left: auto;
+  margin-top: 4px;
+  color: #ccc;
+}
+.col-6 .second-card .card-body {
+  padding: 0;
+}
+.col-6 .second-card .card-title {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 5px;
+  padding: 8px !important;
+  font-weight: 500;
+}
+.col-6 .second-card .imgs {
+  display: flex;
+  justify-content: space-around;
+}
+.col-6 .second-card .imgs img {
+  width: 47%;
+}
+.col-6 .second-card .buttons {
+  display: flex;
+  margin: 12px;
+}
+.right-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: #fff;
+  margin-bottom: 25px;
+}
+.right-section h6 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.right-section img {
+  margin: auto;
+  width: 90%;
+  border-radius: 0%;
+}
+.right-section .first-card button {
+  padding: 5px 40%;
+  color: #000;
+  background-color: #dfe5e8;
+  border: none;
+}
+.right-section .first-card button:hover {
+  padding: 5px 40%;
+  color: #000;
+  background-color: #ccc;
+  border: none;
+}
+.col-2 .second-card .card-body img {
+  margin-top: 5px;
+  margin-left: 25%;
+  width: 50%;
+}
+.col-2 .buttons {
+  margin-top: 15px;
+  display: flex;
+}
+.col-2 .buttons button {
+  display: flex;
+  width: 50%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+}
+.col-2 .buttons button:hover {
+  display: flex;
+  width: 50%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #ccc;
+  color: #000;
+}
+.col-2 .check {
+  background-color: rgba(68, 231, 87, 0.767);
+}
+.col-2 .not-check {
+  background-color: rgba(231, 68, 68, 0.767);
+}
+.ADS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0;
+  font-weight: 400;
+}
+.col-2 .fa-bug {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  font-size: 40px;
+}
+.footer {
+  background-color: #435761;
+  margin-top: 25px;
+}
+.footer p {
+  margin: 0;
+  padding: 25px;
+  color: white;
+}
+.powered {
+  background-color: #303e45;
+}
+.powered p {
+  margin: 0;
+  padding: 25px;
+  color: white;
+}
+.powered a {
+  font-style: none;
+  color: white;
+}
